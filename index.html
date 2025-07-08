@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body style="margin:0; padding:0; font-family:sans-serif; text-align:center;">
+    <h2 id="seats">Loading...</h2>
+
+    <script>
+      fetch('https://script.google.com/macros/s/AKfycbyzAVIbo758yh4fMrMnd-4mEGlhTt9qFvzV7hG4iOIWj1RUVBJlTmia5Mfr-gfIolCU/exec')
+        .then(r => r.text())
+        .then(data => {
+          document.getElementById('seats').innerText = data;
+        });
+    </script>
+  </body>
+</html>
